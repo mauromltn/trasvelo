@@ -1,0 +1,108 @@
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900
+*/
+.outfit-font {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #fff;
+    --secondary: #000;
+    --tertiary: #3156b5;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 50px;
+    z-index: 3;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.logo .spanTitle {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo .spanText {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.menu {
+    padding-left: 180px;
+    padding-right: 240px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 60px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: var(--tertiary);
+}
+
+.contactButton button {
+    padding: 10px 25px;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contactButton button:hover {
+    background-color: var(--secondary);
+}

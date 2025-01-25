@@ -1,133 +1,119 @@
-/* <uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 100 to 900
-*/
-.outfit-font {
-  font-family: "Outfit", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Outfit", serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
 :root {
-    --primary: #fff;
-    --secondary: #000;
-    --tertiary: #3156b5;
+    --heading-small-color: #3b99d4;
+    --background-color: #FAFAFA;
+    --text-color: #1b1b1b;
+    --secondary-text-color: #97999b;
+    --contrast-color: #ffffff;
+    --border-color: rgba(255, 255, 255, 0.4);
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--background-color);
+}
+
+header, main {
+    color: var(--contrast-color);
 }
 
 /* Navbar */
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 50px;
     z-index: 3;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    line-height: 1;
+.spanTitle {
+    font-size: 30px;
+    font-weight: 550;
 }
 
-.logo .spanTitle {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.logo .spanText {
-    font-size: 12px;
-    font-weight: 300;
-    text-wrap: nowrap;
-}
-
-.menu {
-    padding-left: 180px;
-    padding-right: 240px;
-}
-
-.menu ul {
+ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
-.menu ul li {
+ul li {
     list-style: none;
-    margin-left: 60px;
 }
 
-.menu ul li a {
+ul li a {
     text-decoration: none;
     color: var(--secondary);
     font-weight: 500;
     transition: 0.3s ease;
 }
 
-.menu ul li a:hover {
+ul li a:hover {
     color: var(--tertiary);
-}
-
-button {
-    max-width: 100px;
-    padding: 10px 25px;
-    background-color: var(--tertiary);
-    color: var(--primary);
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-button:hover {
-    background-color: var(--secondary);
 }
 
 /* Main */
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 100px;
     height: 100vh;
     width: 100%;
-    background-image: url(Images/mainImg.png);
+    background-image: url(Images/mainimage.webp);
     background-size: cover;
 }
 
 .caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    padding-left: 80px;
+    text-align: center;
     line-height: 1.3;
+    font-size: 60px;
 }
 
-.caption span {
-    font-size: 50px;
-    font-weight: 600;
+.exploreBar {
+    width: 700px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+}
+
+.exploreNav ul {
+    gap: 80px;
+}
+
+.exploreNav ul li .button {
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: var(--contrast-color);
+    color: var(--text-color);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.exploreNav ul li .button:hover {
+    opacity: 0.8;
 }

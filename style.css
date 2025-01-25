@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', serif;
     scroll-behavior: smooth;
 }
 
@@ -12,7 +12,7 @@
     --text-color: #1b1b1b;
     --secondary-text-color: #97999b;
     --contrast-color: #ffffff;
-    --border-color: rgba(255, 255, 255, 0.4);
+    --border-color: rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -60,8 +60,7 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: var(--secondary);
-    font-weight: 500;
+    color: var(--contrast-color);
     transition: 0.3s ease;
 }
 
@@ -71,6 +70,7 @@ ul li a:hover {
 
 /* Main */
 main {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,21 +88,24 @@ main {
     font-size: 60px;
 }
 
+/* Explore */
 .exploreBar {
     width: 700px;
     height: 70px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid var(--border-color);
     border-radius: 100px;
 }
 
 .exploreNav ul {
-    gap: 80px;
+    gap: 60px;
 }
 
 .exploreNav ul li .button {
@@ -116,4 +119,46 @@ main {
 
 .exploreNav ul li .button:hover {
     opacity: 0.8;
+}
+
+/* Location */
+.location {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 570px;
+}
+
+.location .place,
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid var(--contrast-color);
+    border-radius: 100px;
+}
+
+.location .place {
+    margin-bottom: 20px;
+    width: fit-content;
+    gap: 10px;
+}
+
+.location .place span {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.location span {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.more {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    font-size: 20px;
+    gap: 10px;
 }

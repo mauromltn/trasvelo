@@ -227,8 +227,58 @@ main {
     color: var(--tertiary-text-color);
 }
 
+/* Service */
+#service {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .serviceText h1 {
     font-size: 55px;
     font-weight: 300;
-    line-height: 1.7;
+    margin: 15px 0 10px;
 }
+
+.serviceText p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.serviceGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin: auto;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 270px;
+    border-radius: 15px;
+    padding: 20px;
+    background-size: cover;
+    background-position: bottom;
+    color: var(--contrast-color);
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+.large {
+    grid-row: span 2;
+}
+
+.item:nth-child(1) { background-image: url('./Images/destination.jpg'); }
+.item:nth-child(2) { background-image: url('./Images/advice.jpg'); }
+.item:nth-child(3) { background-image: url('./Images/support.jpg'); }

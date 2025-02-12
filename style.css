@@ -11,6 +11,7 @@
     --background-color: #FAFAFA;
     --text-color: #1b1b1b;
     --secondary-text-color: #97999b;
+    --tertiary-text-color: #878787;
     --contrast-color: #ffffff;
     --border-color: rgba(255, 255, 255, 0.3);
 }
@@ -173,11 +174,11 @@ main {
 }
 
 /* About */
-#about {
+#about, #service {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 150px 75px;
+    padding: 150px 75px 0;
     width: 100%;
     background-color: var(--background-color);
 }
@@ -194,8 +195,8 @@ main {
 }
 
 .aboutText p {
-    font-size: 40px;
     margin-top: 15px;
+    font-size: 38px;
     span {
         color: var(--secondary-text-color);
     }
@@ -203,8 +204,31 @@ main {
 
 .boxes {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     width: 600px;
+}
+
+.box {
+    padding: 0 40px;
+}
+
+.box:not(:last-child) {
+    border-right: 1px solid var(--secondary-text-color);
+}
+
+.box span {
+    font-size: 40px;
+}
+
+.box p,
+.serviceText p {
+    color: var(--tertiary-text-color);
+}
+
+.serviceText h1 {
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 1.7;
 }

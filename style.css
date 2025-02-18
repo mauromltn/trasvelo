@@ -78,6 +78,10 @@ main {
     width: 100%;
     background-image: url(Images/mainimage.webp);
     background-size: cover;
+    transition: 0.3s ease;
+}
+
+.border {
     border-radius: 0 0 40px 40px;
 }
 

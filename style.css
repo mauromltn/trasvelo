@@ -62,9 +62,7 @@ ul {
     gap: 40px;
 }
 
-ul li {
-    list-style: none;
-}
+ul li { list-style: none; }
 
 /* Main */
 main {
@@ -81,9 +79,7 @@ main {
     transition: 0.3s ease;
 }
 
-.border {
-    border-radius: 0 0 40px 40px;
-}
+.border { border-radius: 0 0 40px 40px; }
 
 .caption {
     text-align: center;
@@ -108,9 +104,7 @@ main {
     border-radius: 100px;
 }
 
-.exploreNav ul {
-    gap: 60px;
-}
+.exploreNav ul { gap: 60px; }
 
 .exploreNav ul li .button {
     padding: 10px 20px;
@@ -214,20 +208,15 @@ main {
     width: 600px;
 }
 
-.box {
-    padding: 0 40px;
-}
+.box { padding: 0 40px; }
 
 .box:not(:last-child) {
     border-right: 1px solid var(--secondary-text-color);
 }
 
-.box span {
-    font-size: 40px;
-}
+.box span { font-size: 40px; }
 
-.box p,
-.serviceText p {
+.box p, .serviceText p {
     color: var(--tertiary-text-color);
 }
 
@@ -268,7 +257,7 @@ main {
     background-size: cover;
     background-position: bottom;
     color: var(--contrast-color);
-    h2{
+    h2 {
         font-size: 30px;
         font-weight: 400;
         margin-bottom: 10px;
@@ -279,10 +268,37 @@ main {
     }
 }
 
-.large {
-    grid-row: span 2;
-}
+.large { grid-row: span 2; }
 
 .item:nth-child(1) { background-image: url('./Images/destination.jpg'); }
 .item:nth-child(2) { background-image: url('./Images/advice.jpg'); }
 .item:nth-child(3) { background-image: url('./Images/support.jpg'); }
+
+/* Infinite Scroll */
+.booking-website {
+    display: flex;
+    padding-block: 50px;
+    width: 1200px;
+    gap: 50px;
+    overflow: hidden;
+    user-select: none;
+    mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
+}
+
+.booking-website ul {
+    gap: 50px;
+    animation: scroll 20s linear infinite;
+}
+
+.booking-website ul li img {
+    width: 200px; /* Imposta una larghezza fissa */
+    height: 200px; /* Imposta un'altezza fissa */
+    object-fit: contain; /* Mantiene le proporzioni e mostra tutto il logo */
+    padding: 5px;
+}
+
+@keyframes scroll {
+    to {
+      transform: translateX(calc(-100% - 50px));
+    }
+  }

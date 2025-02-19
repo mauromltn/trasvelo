@@ -172,7 +172,7 @@ main {
 }
 
 /* About */
-#about, #service {
+#about, #service, #package {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -226,7 +226,7 @@ main {
     align-items: flex-start;
 }
 
-.serviceText h1 {
+.serviceText h1, #package h1 {
     font-size: 55px;
     font-weight: 300;
     margin: 15px 0 10px;
@@ -301,4 +301,12 @@ main {
     to {
       transform: translateX(calc(-100% - 50px));
     }
-  }
+}
+
+/* Package */
+#package {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}

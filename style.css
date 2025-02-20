@@ -270,10 +270,6 @@ main {
 
 .large { grid-row: span 2; }
 
-.item:nth-child(1) { background-image: url('./Images/destination.jpg'); }
-.item:nth-child(2) { background-image: url('./Images/advice.jpg'); }
-.item:nth-child(3) { background-image: url('./Images/support.jpg'); }
-
 /* Infinite Scroll */
 .booking-website {
     display: flex;
@@ -282,7 +278,7 @@ main {
     gap: 50px;
     overflow: hidden;
     user-select: none;
-    mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, var(--background-color) 10%, var(--background-color) 90%, transparent);
 }
 
 .booking-website ul {
@@ -309,4 +305,5 @@ main {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    padding-top: 0px;
 }

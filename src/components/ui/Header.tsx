@@ -23,20 +23,20 @@ export default function Header() {
    };
 
    return (
-      <header className="w-full text-sm py-4">
+      <header className="fixed w-full text-sm px-5 py-7 z-10 text-white">
          <nav className="relative w-full px-4 flex items-center justify-between">
             <a className="font-semibold text-xl" href="#" aria-label="Brand">trasvelo</a>
 
-            <button className="sm:hidden" onClick={toggleMenu} aria-label="Toggle menu">
+            <button className="md:hidden" onClick={toggleMenu} aria-label="Toggle menu">
                <TbMenu
                   title="Menu icon"
                   size={35}
-                  className="bg-black text-white rounded-full p-2"
+                  className="bg-white text-black rounded-full p-2 active:scale-90 duration-200 ease"
                />
             </button>
 
             <motion.div
-               className={`${isMenuOpen ? "block" : "hidden"} absolute top-12 right-5 flex flex-col items-end gap-5`}
+               className={`${isMenuOpen ? "block" : "hidden"} absolute top-12 right-5 flex flex-col items-end gap-3`}
 
                animate={isMenuOpen ? "open" : "closed"}
                variants={variants}
@@ -46,7 +46,7 @@ export default function Header() {
                      key={i}
                      href={link.path}
                      onClick={toggleMenu}
-                     className="font-medium hover:text-[var(--secondary)] active:text-[var(--accent)]"
+                     className="font-medium active:text-white"
                   >
                      {link.name}
                   </a>
@@ -54,12 +54,12 @@ export default function Header() {
             </motion.div>
 
             {/* Menu for large screens */}
-            <div className="hidden sm:flex sm:flex-row sm:gap-8 sm:static">
+            <div className="hidden md:flex md:flex-row md:gap-8 md:static">
                {navLinks.map((link, i) => (
                   <a
                      key={i}
                      href={link.path}
-                     className="font-medium hover:text-[var(--secondary)] active:text-[var(--accent)]"
+                     className="font-medium active:text-white"
                   >
                      {link.name}
                   </a>

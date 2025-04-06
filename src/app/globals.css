@@ -10,7 +10,6 @@
   --border: rgba(255, 255, 255, 0.3);
 }
 
-
 @theme inline {
   --background: var(--background);
   --foreground: var(--foreground);
@@ -24,4 +23,13 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+select {
+  width: calc(1/4 * 100%);
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }

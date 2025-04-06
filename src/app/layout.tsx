@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import '@/app/globals.css';
 import { inter } from "@/lib/fonts";
 import { Analytics } from '@vercel/analytics/next';
+import Header from "@/components/ui/Header";
 
 export const metadata: Metadata = {
   title: "trasvelo",
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
+        <Header />
         {children}
         <Analytics />
       </body>

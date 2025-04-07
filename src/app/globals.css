@@ -40,7 +40,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 150px 75px 0;
+  padding: 6rem 5rem 0;
   width: 100%;
   background-color: var(--background-color);
 }
@@ -49,4 +49,17 @@ h1 {
   color: var(--accent);
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+
+  #about,
+  #service,
+  #package {
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+    gap: 4rem;
+  }
+
+  h1 { font-size: 1.125rem; }
 }

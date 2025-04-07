@@ -7,7 +7,7 @@ import ExploreBarMobile from './ui/ExploreBarMobile';
 
 export default function Hero() {
    return (
-      <div className="relative flex justify-center w-full h-dvh text-white">
+      <main className="relative flex justify-center w-full h-dvh text-white">
          <Image
             src={heroImage}
             placeholder='blur'
@@ -45,6 +45,6 @@ export default function Hero() {
                <BsArrowDown />
             </a>
           </div>
-      </div>
+      </main>
    )
 }

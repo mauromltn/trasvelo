@@ -10,7 +10,7 @@
   --border: rgba(255, 255, 255, 0.3);
 }
 
-@theme inline {
+:root inline {
   --background: var(--background);
   --foreground: var(--foreground);
   --accent: var(--accent);
@@ -32,4 +32,21 @@ select {
   &:focus {
     outline: none;
   }
+}
+
+#about,
+#service,
+#package {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 75px 0;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+h1 {
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 500;
 }

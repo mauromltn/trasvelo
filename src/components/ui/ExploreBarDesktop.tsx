@@ -26,7 +26,7 @@ export default function ExploreBarDesktop() {
           <option value="newyork">New York</option>
         </select>
 
-        <Divider />
+        <Divider className="bg-white/50 h-2/3" />
         
         <select
           value={date}
@@ -38,7 +38,7 @@ export default function ExploreBarDesktop() {
           <option value="2025-07">July 2025</option>
         </select>
 
-        <Divider />
+        <Divider className="bg-white/50 h-2/3" />
 
         <select
           value={tripType}
@@ -50,7 +50,7 @@ export default function ExploreBarDesktop() {
           <option value="family">Family</option>
         </select>
 
-        <Divider />
+        <Divider className="bg-white/50 h-2/3" />
         
         <button
           onClick={handleExplore}

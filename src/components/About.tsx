@@ -2,10 +2,13 @@ import Divider from "./ui/Divider"
 
 export default function About() {
    return (
-      <section id="about">
-         <div className="md:w-160 font-light">
+      <section
+         id="about"
+         className="items-center justify-between"
+      >
+         <div className="xl:w-160 font-light">
             <h1>ABOUT US</h1>
-            <p className="mt-3 text-2xl md:text-4xl">
+            <p className="text-2xl md:text-4xl">
                We are a passionate team of travel enthusiasts dedicated to making your travel dreams come true.
                <span className="text-[var(--secondary)]"> Our mission is to provide you with the best travel experiences.</span>
             </p>

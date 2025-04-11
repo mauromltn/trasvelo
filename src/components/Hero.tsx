@@ -20,9 +20,8 @@ export default function Hero() {
 
          <div className="absolute inset-0 bg-black/50 rounded-[25] border-5 md:rounded-[35] md:border-8" />
 
-         <div className="absolute top-70 flex flex-col items-center text-xl font-semibold md:text-5xl md:top-85">
-            <span>Begin your dream journey with our</span>
-            <span className='md:mt-3.5'>expert guidance and support</span>
+         <div className="absolute w-90 md:w-200 flex flex-col items-center text-center top-70 text-2xl font-semibold md:text-5xl md:top-85">
+            <span>Begin your dream journey with our expert guidance and support</span>
          </div>
 
          <ExploreBarDesktop />

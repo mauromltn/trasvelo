@@ -11,15 +11,15 @@ export default function Services() {
       >
          <div>
             <h1>OUR SERVICES</h1>
-            <h2 className="text-[3.5rem] font-light">Explore endless options with our service</h2>
-            <p className="w-200 text-lg mb-10">
+            <h2 className="text-4xl md:text-[3.5rem] font-light mb-2">Explore endless options with our service</h2>
+            <p className="md:w-200 md:text-lg md:mb-10">
                Discover a myriad of choices available through our service, offering
                limitless possibilities for your exploration and enjoyment.
             </p>
          </div>
 
-         <div className="grid grid-cols-2 gap-5 w-full text-white">
-            <div className='gridItem row-span-2'>
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full text-white">
+            <div className='gridItem md:row-span-2'>
                <Image
                   src={destination}
                   alt='Image of a beautiful destination'

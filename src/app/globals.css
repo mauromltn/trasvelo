@@ -80,7 +80,7 @@ h1 {
 @media (max-width: 1280px) {
 
   #about,
-  #service,
+  #services,
   #package {
     flex-direction: column;
     padding: 4rem 1.5rem;
@@ -89,5 +89,19 @@ h1 {
 
   h1 {
     font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gridItem {
+    padding: 0.8rem;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
+    }
+    p {
+      font-size: 0.85rem;
+    }
   }
 }

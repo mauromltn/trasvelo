@@ -3,10 +3,10 @@ import logoImages from "@/data/logoImages";
 
 export default function LogoCarousel() {
    return (
-      <div className="carousel w-280 flex m-auto overflow-hidden">
-         <div className="flex gap-15 my-30 animate-infinite-carousel">
+      <div className="carousel max-w-90 md:w-280 flex m-auto overflow-hidden">
+         <div className="flex gap-8 md:gap-15 md:my-30 animate-infinite-carousel">
          {[...logoImages, ...logoImages].map((logo, id) => (
-            <div key={id} className="relative shrink-0 w-40 h-40">
+            <div key={id} className="relative shrink-0 w-25 h-25 md:w-40 md:h-40">
             <Image
                src={logo.src}
                alt={logo.alt}

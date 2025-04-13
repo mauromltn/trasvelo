@@ -1,8 +1,8 @@
 'use client';
-import { useState } from "react";
-import { TbMenu } from "react-icons/tb";
-import { motion } from "framer-motion";
-import { navLinks } from "@/data/navLinks";
+import { useState } from 'react';
+import { Menu } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { navLinks } from '@/data/navLinks';
 
 const variants = {
    open: {
@@ -28,9 +28,8 @@ export default function Header() {
             <a className="font-semibold text-xl" href="#" aria-label="Brand">trasvelo</a>
 
             <button className="md:hidden" onClick={toggleMenu} aria-label="Toggle menu">
-               <TbMenu
-                  title="Menu icon"
-                  size={35}
+               <Menu
+                  size={32}
                   className="bg-white text-black rounded-full p-2 active:scale-90 duration-200 ease"
                />
             </button>

@@ -25,7 +25,7 @@
 }
 
 @theme {
-  --animate-infinite-carousel: infinite-carousel 35s linear infinite;
+  --animate-infinite-carousel: infinite-carousel 30s linear infinite;
 
   @keyframes infinite-carousel {
     0% {
@@ -33,19 +33,7 @@
     }
 
     100% {
-      transform: translateX(calc(-50% - 1.875rem));
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  @keyframes infinite-carousel {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(calc(-50% - 1rem));
+      transform: translateX(calc(-50% - 2.125rem));
     }
   }
 }
@@ -80,6 +68,11 @@ h1 {
   margin-bottom: 0.75rem;
 }
 
+h2 {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
 .gridItem {
   position: relative;
   display: flex;
@@ -105,28 +98,37 @@ h1 {
 
 .carousel {
   mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
-
-  div:hover {
-    animation-play-state: paused
-  }
 }
 
-@media (max-width: 1280px) {
-
+@media (max-width: 1024px) {
   #about,
   #services,
   #package {
     flex-direction: column;
-    padding: 4rem 1.5rem;
+    padding: 8rem 1.5rem 0;
     gap: 4rem;
   }
 
   h1 {
     font-size: 1.125rem;
   }
+
+  h2 {
+    font-size: 2.25rem;
+  }
 }
 
 @media (max-width: 768px) {
+  @keyframes infinite-carousel {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-50% - 1rem));
+    }
+  }
+
   .gridItem {
     padding: 0.8rem;
 

@@ -7,12 +7,12 @@ export default function Services() {
    return (
       <section
          id="services"
-         className="flex-col items-start"
+         className="flex-col mb-24"
       >
          <div>
             <h1>OUR SERVICES</h1>
-            <h2 className="text-4xl md:text-[3.5rem] font-light mb-2">Explore endless options with our service</h2>
-            <p className="md:w-200 md:text-lg md:mb-10">
+            <h2 className="text-4xl lg:text-[3.2rem]">Explore endless options with our service</h2>
+            <p className=" md:text-lg md:mb-10">
                Discover a myriad of choices available through our service, offering
                limitless possibilities for your exploration and enjoyment.
             </p>

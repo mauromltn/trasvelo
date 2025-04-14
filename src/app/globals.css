@@ -58,7 +58,6 @@ select {
   display: flex;
   padding: 6rem 5rem 0;
   width: 100%;
-  background-color: var(--background-color);
 }
 
 h1 {
@@ -100,13 +99,56 @@ h2 {
   mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
 }
 
+.cardContainer {
+  display: flex;
+  gap: 1.25rem;
+
+  &:hover .packageCard:nth-child(1) {
+    flex-grow: 1;
+  }
+  &:hover .packageCard:nth-child(1):hover {
+    flex-grow: 3;
+  }
+}
+
+.packageCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 30rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  flex: 1;
+  transition: 0.3s ease;
+
+  &:nth-child(1) {
+    flex-grow: 3;
+  }
+
+  &:hover {
+    flex-grow: 3;
+  }
+
+  span,
+  div {
+    z-index: 1;
+  }
+}
+
 @media (max-width: 1024px) {
+
   #about,
   #services,
-  #package {
+  #packages {
     flex-direction: column;
     padding: 8rem 1.5rem 0;
     gap: 4rem;
+  }
+
+  #packages {
+    padding-top: 6rem;
+    ;
   }
 
   h1 {

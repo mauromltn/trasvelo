@@ -84,12 +84,10 @@ h2 {
 
   h3 {
     font-size: 1.8rem;
-    margin-bottom: 0.6rem;
     z-index: 1;
   }
 
   p {
-    font-size: 0.95rem;
     font-weight: 300;
     z-index: 1;
   }
@@ -100,14 +98,17 @@ h2 {
 }
 
 .cardContainer {
+  width: 100%;
   display: flex;
   gap: 1.25rem;
 
   &:hover .packageCard:nth-child(1) {
     flex-grow: 1;
+    .packageButton { scale: 0;}
   }
   &:hover .packageCard:nth-child(1):hover {
-    flex-grow: 3;
+    flex-grow: 2.3;
+    .packageButton { scale: 1;}
   }
 }
 
@@ -116,23 +117,43 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 30rem;
+  min-height: 27rem;
   border-radius: 1rem;
   padding: 1.5rem;
   flex: 1;
   transition: 0.3s ease;
 
   &:nth-child(1) {
-    flex-grow: 3;
+    flex-grow: 2.3;
+    .packageButton { scale: 1;}
   }
 
   &:hover {
-    flex-grow: 3;
+    flex-grow: 2.3;
+    .packageButton { scale: 1;}
   }
 
   span,
   div {
     z-index: 1;
+  }
+}
+
+.blurDiv {
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: calc(infinity * 1px);
+  transition-duration: 200ms;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.9);
+    scale: 1.02;
+  }
+  &:active {
+    scale: 0.98;
   }
 }
 

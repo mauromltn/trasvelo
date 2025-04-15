@@ -26,7 +26,7 @@ export default function Services() {
                   placeholder='blur'
                   fill
                   objectFit='cover'
-                  className='rounded-2xl'
+                  className='brightness-80 rounded-2xl'
                />
                <h3>Diverse Destinations</h3>
                <p>Access to a wide range of domestic and international locations.</p>
@@ -39,7 +39,7 @@ export default function Services() {
                   fill
                   objectFit='cover'
                   objectPosition='bottom'
-                  className='z-0 rounded-2xl'
+                  className='brightness-80 rounded-2xl'
                />
                <h3>Expert Travel Advice</h3>
                <p>Tips and guides to enhance your travel experience.</p>
@@ -52,7 +52,7 @@ export default function Services() {
                   fill
                   objectFit='cover'
                   objectPosition='bottom'
-                  className='z-0 rounded-2xl'
+                  className='brightness-80 rounded-2xl'
                />
                <h3>Comprehensive Travel Support</h3>
                <p>24/7 customer service to assist you before, during, and after your trip.</p>

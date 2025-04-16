@@ -4,7 +4,7 @@ export default function Questions() {
   return (
     <section
       id="questions"
-      className="flex mt-10"
+      className="flex lg:mt-10"
       >
       <div className="lg:w-1/2">
         <h1>FAQs</h1>

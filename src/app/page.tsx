@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import LogoCarousel from "@/components/ui/LogoCarousel";
 import Packages from "@/components/Packages";
 import Questions from "@/components/Questions";
+import Review from "@/components/Review";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <LogoCarousel />
       <Packages />
       <Questions />
+      <Review />
     </>
   );
 }

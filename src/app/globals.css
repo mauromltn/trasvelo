@@ -104,11 +104,18 @@ h2 {
 
   &:hover .packageCard:nth-child(1) {
     flex-grow: 1;
-    .packageButton { scale: 0;}
+
+    .packageButton {
+      scale: 0;
+    }
   }
+
   &:hover .packageCard:nth-child(1):hover {
     flex-grow: 2.3;
-    .packageButton { scale: 1;}
+
+    .packageButton {
+      scale: 1;
+    }
   }
 }
 
@@ -125,12 +132,18 @@ h2 {
 
   &:nth-child(1) {
     flex-grow: 2.3;
-    .packageButton { scale: 1;}
+
+    .packageButton {
+      scale: 1;
+    }
   }
 
   &:hover {
     flex-grow: 2.3;
-    .packageButton { scale: 1;}
+
+    .packageButton {
+      scale: 1;
+    }
   }
 
   span,
@@ -152,6 +165,7 @@ h2 {
     border-color: rgba(255, 255, 255, 0.9);
     scale: 1.02;
   }
+
   &:active {
     scale: 0.98;
   }
@@ -178,6 +192,16 @@ h2 {
 
   h2 {
     font-size: 2.25rem;
+  }
+
+  .cardContainer {
+    max-width: 50rem;
+    
+    &:hover .packageCard:nth-child(1) {
+      .packageButton {
+        scale: 1;
+      }
+    }
   }
 }
 

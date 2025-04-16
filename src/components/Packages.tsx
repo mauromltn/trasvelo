@@ -1,4 +1,4 @@
-import { packagesInfo } from '@/data/packagesInfo';
+import { packagesData } from '@/data/packagesData';
 import Image from 'next/image';
 
 export default function Packages() {
@@ -13,7 +13,7 @@ export default function Packages() {
          </div>
 
          <div className="flex flex-col lg:flex-row cardContainer text-white">
-            {packagesInfo.map((packageItem, id) => (
+            {packagesData.map((packageItem, id) => (
                <div key={id} className="packageCard relative">
                   <span className="blurDiv text-xs md:text-sm py-2 px-2.5">5 days, 4 nights</span>
                   <Image
@@ -25,12 +25,12 @@ export default function Packages() {
                   />
                   <div className='flex justify-between items-center'>
                       <div>
-                        <h3 className="text-[1.3rem] font-medium md:text-2xl mb-1 md:mb-0">{packageItem.header}</h3>
+                        <h3 className="text-[1.3rem] font-medium md:font-normal md:text-2xl mb-1 md:mb-0">{packageItem.header}</h3>
                         <p className='max-w-80 text-sm md:text-base font-light'>{packageItem.description}</p>
                       </div>
 
-                      <div className='packageButton absolute bottom-28 md:bottom-35 lg:bottom-30 xl:bottom-10 xl:right-10 scale-100 lg:scale-0 duration-300 ease'>
-                        <button className='blurDiv py-2.5 px-4 md:px-6 text-sm md:text-vase font-light cursor-pointer'>Choose package</button>
+                      <div className='buttonContainer absolute bottom-27.5 md:bottom-30 xl:bottom-10 xl:right-10 scale-100 lg:scale-0 duration-300 ease'>
+                        <button className='blurDiv packageButton py-2.5 px-4 md:px-6 text-sm md:text-vase font-light cursor-pointer'>Choose package</button>
                       </div>
                   </div>
                </div>

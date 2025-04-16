@@ -1,4 +1,4 @@
-export const packagesInfo = [
+export const packagesData = [
    {
       src: "/packages/allInclusive.jpg",
       alt: "",

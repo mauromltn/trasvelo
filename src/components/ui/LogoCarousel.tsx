@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logoImages from "@/data/logoImages";
+import { logoImages } from "@/data/logoImages";
 
 export default function LogoCarousel() {
    return (

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 * {
   scroll-behavior: smooth;
@@ -15,13 +16,13 @@
 }
 
 @theme inline {
-  --background: var(--background);
-  --foreground: var(--foreground);
-  --accent: var(--accent);
-  --secondary: var(--secondary);
-  --tertiary: var(--tertiary);
-  --contrast: var(--contrast);
-  --border: var(--border);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-contrast: var(--contrast);
+  --color-border: var(--border);
 }
 
 @theme {
@@ -54,9 +55,10 @@ select {
 
 #about,
 #services,
-#packages {
+#packages,
+#questions {
   display: flex;
-  padding: 6rem 5rem 0;
+  padding: 7rem 5rem 0;
   width: 100%;
 }
 
@@ -105,7 +107,7 @@ h2 {
   &:hover .packageCard:nth-child(1) {
     flex-grow: 1;
 
-    .packageButton {
+    .buttonContainer {
       scale: 0;
     }
   }
@@ -113,7 +115,7 @@ h2 {
   &:hover .packageCard:nth-child(1):hover {
     flex-grow: 2.3;
 
-    .packageButton {
+    .buttonContainer {
       scale: 1;
     }
   }
@@ -133,7 +135,7 @@ h2 {
   &:nth-child(1) {
     flex-grow: 2.3;
 
-    .packageButton {
+    .buttonContainer {
       scale: 1;
     }
   }
@@ -141,7 +143,7 @@ h2 {
   &:hover {
     flex-grow: 2.3;
 
-    .packageButton {
+    .buttonContainer {
       scale: 1;
     }
   }
@@ -159,7 +161,9 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: calc(infinity * 1px);
   transition-duration: 200ms;
+}
 
+.packageButton {
   &:hover {
     background-color: rgba(255, 255, 255, 0.15);
     border-color: rgba(255, 255, 255, 0.9);
@@ -175,7 +179,8 @@ h2 {
 
   #about,
   #services,
-  #packages {
+  #packages,
+  #questions {
     flex-direction: column;
     padding: 8rem 1.5rem 0;
     gap: 4rem;
@@ -196,9 +201,9 @@ h2 {
 
   .cardContainer {
     max-width: 50rem;
-    
+
     &:hover .packageCard:nth-child(1) {
-      .packageButton {
+      .buttonContainer {
         scale: 1;
       }
     }

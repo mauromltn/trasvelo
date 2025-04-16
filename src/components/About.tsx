@@ -10,28 +10,28 @@ export default function About() {
             <h1>ABOUT US</h1>
             <p className="text-2xl lg:text-4xl">
                We are a passionate team of travel enthusiasts dedicated to making your travel dreams come true.
-               <span className="text-[var(--secondary)]"> Our mission is to provide you with the best travel experiences.</span>
+               <span className="text-secondary"> Our mission is to provide you with the best travel experiences.</span>
             </p>
          </div>
 
          <div className="flex items-center justify-center text-center w-full h-10 gap-3 text-2xl md:w-140 md:h-15 md:gap-6 md:text-4xl">
             <div>
                <span>200+</span>
-               <p className="text-[var(--tertiary)] text-sm lg:text-base">Happy Customers</p>
+               <p className="text-tertiary text-sm lg:text-base">Happy Customers</p>
             </div>
 
-            <Divider className="bg-[var(--secondary)] h-1/2" />
+            <Divider className="bg-secondary h-1/2" />
             
             <div>
                <span>65+</span>
-               <p className="text-[var(--tertiary)] text-sm lg:text-base">Top Hotels</p>
+               <p className="text-tertiary text-sm lg:text-base">Top Hotels</p>
             </div>
 
-            <Divider className="bg-[var(--secondary)] h-1/2" />
+            <Divider className="bg-secondary h-1/2" />
             
             <div>
                <span>250+</span>
-               <p className="text-[var(--tertiary)] text-sm lg:text-base">Experienced Guide</p>
+               <p className="text-tertiary text-sm lg:text-base">Experienced Guide</p>
             </div>
          </div>
       </section>

@@ -245,6 +245,26 @@ h2 {
     }
   }
 
+  @keyframes review-carousel {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-50% - 0.625rem));
+    }
+  }
+
+  @keyframes review-carousel-reverse {
+    0% {
+      transform: translateX(calc(-50% - 0.625rem));
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   .gridItem {
     padding: 0.8rem;
 

@@ -203,8 +203,7 @@ h2 {
   #about,
   #services,
   #packages,
-  #questions,
-  #review {
+  #questions {
     flex-direction: column;
     padding: 8rem 1.5rem 0;
     gap: 4rem;

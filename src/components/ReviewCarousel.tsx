@@ -22,7 +22,7 @@ const reviewItems1 = reviewData1.map((review) => ({
 }));
 
 export function ReviewCarousel1() {
-   return <InfiniteCarousel items={reviewItems1} className="animate-review-carousel gap-5 md:gap-8 md:mb-8" />;
+   return <InfiniteCarousel items={reviewItems1} className="animate-review-carousel gap-5 mb-5 md:gap-8 md:mb-8" />;
 }
 
 const reviewItems2 = reviewData2.map((review) => ({
@@ -45,5 +45,5 @@ const reviewItems2 = reviewData2.map((review) => ({
 }));
 
 export function ReviewCarousel2() {
-   return <InfiniteCarousel items={reviewItems2} className="animate-review-carousel-reverse gap-5 mb-8" />;
+   return <InfiniteCarousel items={reviewItems2} className="animate-review-carousel-reverse gap-5 md:gap-8" />;
 }

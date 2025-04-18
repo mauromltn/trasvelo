@@ -26,15 +26,37 @@
 }
 
 @theme {
-  --animate-infinite-carousel: infinite-carousel 30s linear infinite;
+  --animate-logo-carousel: logo-carousel 30s linear infinite;
+  --animate-review-carousel: review-carousel 50s linear infinite;
+  --animate-review-carousel-reverse: review-carousel-reverse 50s linear infinite;
 
-  @keyframes infinite-carousel {
+  @keyframes logo-carousel {
     0% {
       transform: translateX(0);
     }
 
     100% {
       transform: translateX(calc(-50% - 2.125rem));
+    }
+  }
+
+  @keyframes review-carousel {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-50% - 1rem));
+    }
+  }
+
+  @keyframes review-carousel-reverse {
+    0% {
+      transform: translateX(calc(-50% - 1rem));
+    }
+
+    100% {
+      transform: translateX(0);
     }
   }
 }
@@ -213,7 +235,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  @keyframes infinite-carousel {
+  @keyframes logo-carousel {
     0% {
       transform: translateX(0);
     }

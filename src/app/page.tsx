@@ -6,6 +6,7 @@ import Packages from "@/components/Packages";
 import Questions from "@/components/Questions";
 import Review from "@/components/Review";
 import CallToAction from "@/components/CallToAction";
+import Footer from "@/components/ui/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Questions />
       <Review />
       <CallToAction />
+      <Footer />
     </>
   );
 }

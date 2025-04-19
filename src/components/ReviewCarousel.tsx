@@ -9,6 +9,7 @@ const reviewItems1 = reviewData1.map((review) => ({
             <Image
                src={review.avatar}
                alt={review.name}
+               placeholder="blur"
                width={35}
                height={35}
                objectFit="cover"
@@ -16,7 +17,7 @@ const reviewItems1 = reviewData1.map((review) => ({
             />
             <p className="text-lg md:text-xl font-medium">{review.name}</p>
          </div>
-         <p className="text-sm md:text-base text-gray-700">{review.text}</p>
+         <p className="text-sm md:text-base text-tertiary">{review.text}</p>
       </div>
    ),
 }));
@@ -32,6 +33,7 @@ const reviewItems2 = reviewData2.map((review) => ({
             <Image
                src={review.avatar}
                alt={review.name}
+               placeholder="blur"
                width={35}
                height={35}
                objectFit="cover"
@@ -39,7 +41,7 @@ const reviewItems2 = reviewData2.map((review) => ({
             />
             <p className="text-lg md:text-xl font-medium">{review.name}</p>
          </div>
-         <p className="text-sm md:text-base text-gray-700">{review.text}</p>
+         <p className="text-sm md:text-base text-tertiary">{review.text}</p>
       </div>
    ),
 }));

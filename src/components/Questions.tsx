@@ -19,7 +19,7 @@ export default function Questions() {
           >
             <input type="radio" name="my-accordion-2" defaultChecked={id === 0} />
             <h3 className='collapse-title text-lg md:text-xl font-medium'>{questionItem.question}</h3>
-            <p className='collapse-content text-secondary'>{questionItem.answer}.</p>
+            <p className='collapse-content text-tertiary'>{questionItem.answer}.</p>
           </div>
         ))}
       </div>

@@ -23,7 +23,7 @@ export default function Header() {
    };
 
    return (
-      <header className="fixed w-full text-sm px-5 py-7 z-10 text-white">
+      <header className="w-full h-fit text-sm px-5 py-8 z-10 text-white">
          <nav className="relative w-full px-4 flex items-center justify-between">
             <a className="font-semibold text-xl" href="#" aria-label="Brand">trasvelo</a>
 

@@ -4,21 +4,22 @@ import { MapPinned } from 'lucide-react';
 import { ArrowDown } from 'lucide-react';
 import ExploreBarDesktop from './ui/ExploreBarDesktop';
 import ExploreBarMobile from './ui/ExploreBarMobile';
+import Header from './ui/Header';
 
 export default function Hero() {
    return (
       <main className="relative flex justify-center w-full h-dvh text-white">
+         <Header />
          <Image
             src={heroImage}
             placeholder='blur'
             layout="fill"
             objectFit="cover"
-            quality={100}
-            className="rounded-[25] border-5 md:rounded-[35] md:border-8"
+            className="rounded-[25] border-5 md:rounded-[35] md:border-15"
             alt="Image of the Empire State Building in New York City"
          />
 
-         <div className="absolute inset-0 bg-black/50 rounded-[25] border-5 md:rounded-[35] md:border-8" />
+         <div className="absolute inset-0 bg-black/50 rounded-[25] border-5 md:rounded-[35] md:border-15" />
 
          <div className="absolute flex flex-col items-center text-center top-70 w-90 text-2xl sm:w-150 sm:text-4xl lg:w-200 lg:text-5xl md:top-85 font-semibold">
             <span>Begin your dream journey with our expert guidance and support</span>

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import '@/app/globals.css';
 import { inter } from "@/lib/fonts";
 import { Analytics } from '@vercel/analytics/next';
-import Header from "@/components/ui/Header";
 
 export const metadata: Metadata = {
   title: "trasvelo",

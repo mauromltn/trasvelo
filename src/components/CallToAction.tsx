@@ -14,7 +14,7 @@ export default function CallToAction() {
             alt="Call to action image"
          />
          <span className="absolute top-50 text-center w-310 text-[4rem] tracking-tight">
-            Don't wait any longer! Start your adventure and explore new experiences today
+            Don&apos;t wait any longer! Start your adventure and explore new experiences today
          </span>
 
          <div className="absolute top-110 flex items-center w-120 h-15 p-2 gap-8 rounded-full border-2 border-white text-sm font-medium backdrop-blur-sm bg-black/5">

@@ -4,7 +4,7 @@ import Divider from "./ui/Divider"
 
 export default function CallToAction() {
    return (
-      <section className="relative flex justify-center w-full h-120 md:h-180 text-white mt-20">
+      <section id="subscribe" className="relative flex justify-center w-full h-120 md:h-180 text-white mt-20">
          <Image
             src={callToAction}
             placeholder='blur'

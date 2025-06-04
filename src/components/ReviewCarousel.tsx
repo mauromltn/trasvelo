@@ -9,7 +9,6 @@ const reviewItems1 = reviewData1.map((review) => ({
             <Image
                src={review.avatar}
                alt={review.name}
-               placeholder="blur"
                width={35}
                height={35}
                objectFit="cover"
@@ -33,7 +32,6 @@ const reviewItems2 = reviewData2.map((review) => ({
             <Image
                src={review.avatar}
                alt={review.name}
-               placeholder="blur"
                width={35}
                height={35}
                objectFit="cover"

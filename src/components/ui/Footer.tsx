@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-5 p-5 sm:p-10 bg-neutral-900 text-white border-5 md:border-15 border-t-0 rounded-b-[35]">
+    <footer className="flex flex-col gap-5 p-5 sm:p-10 bg-neutral-900 text-white border-5 md:border-15 rounded-[25] md:rounded-[35]">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Brand and description - takes full width on mobile, 1/4 on large screens */}
         <div className="flex flex-col gap-5 lg:col-span-2">

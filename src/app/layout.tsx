@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import '@/app/globals.css';
 import { inter } from "@/lib/fonts";
 import { Analytics } from '@vercel/analytics/next';
+import { Toaster } from 'sonner';
 
 export const metadata: Metadata = {
   title: "trasvelo",
@@ -17,6 +18,18 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         {children}
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            style: {
+              display: 'flex',
+              justifyContent: 'center',
+              background: 'transparent',
+              border: 'none',
+              boxShadow: 'none',
+            },
+          }}
+        />
         <Analytics />
       </body>
     </html>
